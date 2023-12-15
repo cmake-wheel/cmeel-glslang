@@ -1,6 +1,6 @@
 [build-system]
 build-backend = "cmeel"
-requires = ["cmeel[build]", "cmeel-spirv-tools"]
+requires = ["cmeel-spirv-tools", "cmeel[build]"]
 
 [project]
 description = "cmeel distribution for glslang"
@@ -15,7 +15,7 @@ repository = "https://github.com/cmake-wheel/cmeel-glslang.git"
 upstream = "https://github.com/KhronosGroup/glslang"
 
 [tool.cmeel]
-configure-args = ["-DBUILD_SHARED_LIBS=ON", "-DGLSLANG_TESTS=ON", "-DALLOW_EXTERNAL_SPIRV_TOOLS=ON"]
+configure-args = ["-DALLOW_EXTERNAL_SPIRV_TOOLS=ON", "-DBUILD_SHARED_LIBS=ON", "-DGLSLANG_TESTS=ON"]
 has-sitelib = false
 source = "glslang"
 
