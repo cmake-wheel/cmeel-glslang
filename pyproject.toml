@@ -15,6 +15,7 @@ repository = "https://github.com/cmake-wheel/cmeel-glslang.git"
 upstream = "https://github.com/KhronosGroup/glslang"
 
 [tool.cmeel]
+build-number = 0
 configure-args = ["-DBUILD_SHARED_LIBS=ON", "-DGLSLANG_TESTS=ON", "-DALLOW_EXTERNAL_SPIRV_TOOLS=ON"]
 has-sitelib = false
 source = "glslang"
